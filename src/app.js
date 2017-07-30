@@ -12,6 +12,7 @@ const ProfileComponent = require('./components/profile');
 
 //services
 const PostService = require('./services/post.service');
+const AuthService = require('./services/auth.service');
 
 angular.module('bloggo', [])
       .component('home', HomeComponent)
@@ -22,4 +23,5 @@ angular.module('bloggo', [])
       .component('postEditor', PostEditorComponent)
       .component('postCreator', PostCreatorComponent)
       .component('profile', ProfileComponent)
-      .factory('posts', PostService);
+      .factory('posts', PostService)
+      .factor('auth', AuthService);
