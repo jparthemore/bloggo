@@ -10,6 +10,9 @@ const PostEditorComponent = require('./components/post-editor');
 const PostCreatorComponent = require('./components/post-creator');
 const ProfileComponent = require('./components/profile');
 
+//services
+const PostService = require('./services/post.service');
+
 angular.module('bloggo', [])
       .component('home', HomeComponent)
       .component('navigation', NavigationComponent)
@@ -18,4 +21,5 @@ angular.module('bloggo', [])
       .component('postReader', PostReaderComponent)
       .component('postEditor', PostEditorComponent)
       .component('postCreator', PostCreatorComponent)
-      .component('profile', ProfileComponent);
+      .component('profile', ProfileComponent)
+      .factory('posts', PostService);
