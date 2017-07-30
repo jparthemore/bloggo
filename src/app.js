@@ -7,6 +7,7 @@ const LoginComponent = require('./components/login');
 const SignupComponent = require('./components/signup');
 const PostReaderComponent = require('./components/post-reader');
 const PostEditorComponent = require('./components/post-editor');
+const PostCreatorComponent = require('./components/post-creator');
 
 angular.module('bloggo', [])
       .component('home', HomeComponent)
@@ -14,4 +15,5 @@ angular.module('bloggo', [])
       .component('login', LoginComponent)
       .component('signup', SignupComponent)
       .component('postReader', PostReaderComponent)
-      .component('postEditor', PostEditorComponent);
+      .component('postEditor', PostEditorComponent)
+      .component('postCreator', PostCreatorComponent);
