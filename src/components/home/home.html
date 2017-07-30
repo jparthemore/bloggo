@@ -1,0 +1,14 @@
+<section>
+  <header>
+    <h1>Home</h1>
+  </header>
+  <main>
+    <div ng-repeat='post in $ctrl.posts'>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.description }}</p>
+    </div>
+  </main>
+  <footer>
+    <p>Bloggo</p>
+  </footer>
+</section>
