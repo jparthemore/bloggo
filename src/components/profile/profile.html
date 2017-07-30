@@ -1,0 +1,14 @@
+<section>
+  <header>
+    <h1>{{ $ctrl.user.email }}</h1>
+  </header>
+  <main>
+    <div ng-repeat='post in $ctrl.userPosts'>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.body }}</p>
+    </div>
+  </main>
+  <footer>
+    Bloggo
+  </footer>
+</section>
