@@ -24,4 +24,4 @@ angular.module('bloggo', [])
       .component('postCreator', PostCreatorComponent)
       .component('profile', ProfileComponent)
       .factory('posts', PostService)
-      .factor('auth', AuthService);
+      .factory('auth', AuthService);
