@@ -20,7 +20,7 @@ function PostService(){
   function update(postId, postUpdates){
     console.log('updating a post');
   }
-  function delete(postId){
+  function deleteOne(postId){
     console.log('deleting a post');
   }
 }
