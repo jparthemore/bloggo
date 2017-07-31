@@ -9,6 +9,7 @@ const PostReaderComponent = require('./components/post-reader');
 const PostEditorComponent = require('./components/post-editor');
 const PostCreatorComponent = require('./components/post-creator');
 const ProfileComponent = require('./components/profile');
+const LogoutComponent = require('./components/logout');
 
 //services
 const PostService = require('./services/post.service');
@@ -23,5 +24,6 @@ angular.module('bloggo', [])
       .component('postEditor', PostEditorComponent)
       .component('postCreator', PostCreatorComponent)
       .component('profile', ProfileComponent)
+      .component('logout', LogoutComponent)
       .factory('posts', PostService)
       .factory('auth', AuthService);
