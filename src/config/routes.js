@@ -1,7 +1,12 @@
+const PostDataResolve = require('./resolves/post-data.resolve');
+
 function RouterConfig($routeProvider){
-  $routeProvider
-    .when('/',{  //current page for front end
-      template: '<home></home>'
+  $routeProvider//current page for front end
+    .when('/',{
+      template: '<home posts="$resolve.postData"></home>',
+      resolve: {
+        postData: PostDataResolve
+      }
     })
     .when('/signup',{
       template: '<signup>/<signup>'
